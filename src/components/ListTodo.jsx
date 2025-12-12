@@ -168,7 +168,7 @@ const ListTodo = () => {
                     </li>
                 ))}
             </ul>
-            <PDFDownloadLink document={<TodoPdf todos={todos} fileName="todo-list.pdf" />}>
+            <PDFDownloadLink document={<TodoPdf todos={todos} fileName="todo_list.pdf" />}>
                 {({ loading }) =>
                     loading ? "Generating PDF..." : (
                         <button className="bg-green-500 text-white px-4 py-2 rounded mt-4">Download PDF</button>
