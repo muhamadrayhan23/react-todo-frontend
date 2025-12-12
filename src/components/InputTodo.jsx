@@ -37,8 +37,8 @@ const InputTodo = () => {
         <div className="container mx-auto p-4">
             <form onSubmit={handleSubmit} id="form-todo" className="flex flex-col flex-no-wrap justify-center items-stretch content-between
 ">
-                <input type="text" name="content" placeholder="Todo..." value={todo} onChange={(e) => setTodo(e.target.value)} className="flex-1 px-2 py-3 rounded-lg border block flex-grow-0 flex-shrink self-auto order-none mb-4" />
-                <textarea placeholder="Description...." value={description} onChange={(e) => setDescription(e.target.value)} className="border p-2 rounded block flex-grow-0 flex-shrink self-auto order-none" />
+                <input type="text" name="content" placeholder="Todo..." value={todo} onChange={(e) => setTodo(e.target.value)} className="flex-1 px-2 py-3 rounded-lg border block flex-grow-0 flex-shrink self-auto order-none mb-4 bg-white" />
+                <textarea placeholder="Description...." value={description} onChange={(e) => setDescription(e.target.value)} className="border p-2 rounded block flex-grow-0 flex-shrink self-auto order-none bg-white" />
                 <button disabled={loading} className="bg-blue-500 m-6 hover:bg-blue-700 text-white py-2 px-1 border border-blue-700 rounded">{loading ? "saving..." : "Add Todo"}</button>
             </form>
         </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import InputTodo from "./components/InputTodo";
 import ListTodo from "./components/ListTodo";
-import { getTodos, createTodo } from "./services/todoApi";
+import { getTodos } from "./services/todoApi";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -19,8 +19,9 @@ function App() {
 
   return (
     <>
-      <div className="container max-w-2xl mx-auto px-4 py-6">
-        <h1 className="text-center font-bold mt-6 text-2xl">To Do List React + Expess & Mysql</h1>
+      <div className="container max-w-2xl mx-auto px-4 py-6  m-20
+      rounded shadow-sm">
+        <h1 className="text-center font-bold mt-6 text-2xl">To Do List React + Express.Js & Mysql</h1>
         <InputTodo reload={loadTodos} />
         <ListTodo todos={todos} reload={loadTodos} />
       </div>
